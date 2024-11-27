@@ -3,9 +3,21 @@
   font-family: Nunito Sans, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+body{
+  --background-color: white;
+  --text-color: black;
+  --elements-color: white;
+
+}
+body.dark {
+  --background-color: hsl(207, 26%, 17%);
+  --text-color: white;
+  --elements-color: hsl(209, 23%, 22%);
+}
 .header-container {
   box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1);
   padding-inline: 24px;
+  background-color: var(--elements-color);
 }
 .header-content {
   display: flex;
